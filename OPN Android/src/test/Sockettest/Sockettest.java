@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 /* cliente*/
 public class Sockettest extends Activity {
-	/** Called when the activity is first created. */
+
 
 	private Button btconect, btdisconect, bt1, bt2;
 	private EditText ipinput, portinput;
@@ -48,8 +48,6 @@ public class Sockettest extends Activity {
 
 		bt1 = (Button) findViewById(R.id.bt1);
 		bt2 = (Button) findViewById(R.id.bt2);
-		//bt3 = (Button) findViewById(R.id.bt3);
-		//bt4 = (Button) findViewById(R.id.bt4);
 
 	
 		//Al clickear en conectar
