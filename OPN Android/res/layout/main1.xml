@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/ipfondo" />
+
+			 <EditText
+			     android:id="@+id/ipinput"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_below="@+id/textView1"
+			     android:layout_centerHorizontal="true"
+			     android:layout_marginTop="14dp"
+			     android:ems="10"
+			     android:hint="Ip"
+			     android:inputType="phone" />
+
+			 <EditText
+			     android:id="@+id/portinput"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignLeft="@+id/ipinput"
+			     android:layout_centerVertical="true"
+			     android:ems="10"
+			     android:hint="Puerto"
+			     android:inputType="phone" >
+
+			     <requestFocus />
+			 </EditText>
+
+			 <Button
+			     android:id="@+id/btcnt"
+			     android:layout_width="40dip"
+			     android:layout_height="40dip"
+			     android:layout_above="@+id/textView1"
+			     android:layout_toRightOf="@+id/ipinput"
+			     android:background="@drawable/on1" />
+
+			 <ImageView
+			     android:id="@+id/leds"
+			     android:layout_width="30dp"
+			     android:layout_height="30dp"
+			     android:layout_alignRight="@+id/ipinput"
+			     android:layout_alignTop="@+id/btcnt"
+			     android:layout_marginRight="16dp"
+			     android:gravity="fill"
+			     android:src="@drawable/bombiapaga" />
+
+			 <Button
+			     android:id="@+id/btdisc"
+			     android:layout_width="40dip"
+			     android:layout_height="40dip"
+			     android:layout_alignParentTop="true"
+			     android:layout_marginTop="19dp"
+			     android:layout_toLeftOf="@+id/ipinput"
+			     android:background="@drawable/off1" />
+
+			 <TextView
+			     android:id="@+id/textView2"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_above="@+id/portinput"
+			     android:layout_marginBottom="20dp"
+			     android:layout_toRightOf="@+id/btdisc"
+			     android:text="Introduzca el puerto:"
+			     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			 <TextView
+			     android:id="@+id/textView1"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignLeft="@+id/ipinput"
+			     android:layout_below="@+id/btdisc"
+			     android:layout_marginTop="28dp"
+			     android:text="Introduzca la IP:"
+			     android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			 <Button
+			     android:id="@+id/bt1"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_below="@+id/portinput"
+			     android:layout_marginTop="81dp"
+			     android:layout_toRightOf="@+id/btdisc"
+			     android:text="Abrir" />
+
+			 <Button
+			     android:id="@+id/bt2"
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_alignBaseline="@+id/bt1"
+			     android:layout_alignBottom="@+id/bt1"
+			     android:layout_alignRight="@+id/portinput"
+			     android:text="Cerrar" />
+			 
+</RelativeLayout>
