@@ -5,7 +5,7 @@
 
 // Introduce la dirección MAC y la dirección IP para la tarjeta Arduino:
 
-byte mac[] = { 0x38, 0xC8, 0x5C, 0x7F, 0xCF, 0x88 }; 
+byte mac[] = { 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF }; 
 byte ip[]={192,168,1,25 };
 
 byte server []= { 192,168,1,80}; // dirección IP del servidor
